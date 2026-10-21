@@ -12,13 +12,9 @@ devicetree.resource/DT_GetPropLen
 devicetree.resource/DT_GetPropName
 devicetree.resource/DT_GetPropValue
 devicetree.resource/DT_OpenKey
+devicetree.resource/--background--         devicetree.resource/--background--
 
-devicetree.resource/--background--       devicetree.resource/--background--
-
-   NAME
-	--background-- -- the versions of the resource, and how they are written here
-
-   FUNCTION
+   VERSION MARKS
 	The calls of this resource are described one by one below. This entry
 	says since when each exists, and how a change is told, as the autodocs
 	of the system do (see exec.library/AllocPooled or StackSwap).
@@ -51,7 +47,7 @@ devicetree.resource/--background--       devicetree.resource/--background--
 	The ROM of the Emu68 1.1.0-beta.1 build of 17.10.2026 has 1.5, built
 	from the tree of commit 943f3b5.
 
-   NOTE
+   VERSION AND REVISION
 	lib_Version and lib_Revision of the resource. They were written by hand
 	and did not always follow the id string: the project said 1.2 while the
 	revision was 3, and from 1.5 on the revision stayed at 4 while the id
@@ -67,7 +63,7 @@ devicetree.resource/--background--       devicetree.resource/--background--
    SEE ALSO
 	exec.library/OpenResource()
 
-devicetree.resource/DT_CloseKey                 devicetree.resource/DT_CloseKey
+devicetree.resource/DT_CloseKey               devicetree.resource/DT_CloseKey
 
    NAME
 	DT_CloseKey -- close a node obtained with DT_OpenKey
@@ -88,7 +84,7 @@ devicetree.resource/DT_CloseKey                 devicetree.resource/DT_CloseKey
    SEE ALSO
 	devicetree.resource/DT_OpenKey()
 
-devicetree.resource/DT_FindProperty         devicetree.resource/DT_FindProperty
+devicetree.resource/DT_FindProperty       devicetree.resource/DT_FindProperty
 
    NAME
 	DT_FindProperty -- find a property of a node by name
@@ -129,7 +125,7 @@ devicetree.resource/DT_FindProperty         devicetree.resource/DT_FindProperty
 	devicetree.resource/DT_FindPropertyRecursive(),
 	devicetree.resource/DT_GetPropValue()
 
-devicetree.resource/DT_FindPropertyRecursive devicetree.resource/DT_FindPropertyRecursive
+devicetree.resource/DT_FindPropertyRecursive devicetree.resource/DT_FindPropertyRecursive
 
    NAME
 	DT_FindPropertyRecursive -- find a property in a node or in its ancestors (V1.5)
@@ -157,7 +153,7 @@ devicetree.resource/DT_FindPropertyRecursive devicetree.resource/DT_FindProperty
 	devicetree.resource/DT_FindProperty(),
 	devicetree.resource/DT_GetParent()
 
-devicetree.resource/DT_GetChild                 devicetree.resource/DT_GetChild
+devicetree.resource/DT_GetChild               devicetree.resource/DT_GetChild
 
    NAME
 	DT_GetChild -- get the first child of a node, or the next sibling
@@ -199,7 +195,7 @@ devicetree.resource/DT_GetChild                 devicetree.resource/DT_GetChild
 	devicetree.resource/DT_GetParent(),
 	devicetree.resource/DT_GetKeyName()
 
-devicetree.resource/DT_GetKeyName             devicetree.resource/DT_GetKeyName
+devicetree.resource/DT_GetKeyName           devicetree.resource/DT_GetKeyName
 
    NAME
 	DT_GetKeyName -- get the name of a node (V1.4)
@@ -223,7 +219,7 @@ devicetree.resource/DT_GetKeyName             devicetree.resource/DT_GetKeyName
    SEE ALSO
 	devicetree.resource/DT_OpenKey()
 
-devicetree.resource/DT_GetParent               devicetree.resource/DT_GetParent
+devicetree.resource/DT_GetParent             devicetree.resource/DT_GetParent
 
    NAME
 	DT_GetParent -- get the parent of a node (V1.2)
@@ -247,7 +243,7 @@ devicetree.resource/DT_GetParent               devicetree.resource/DT_GetParent
    SEE ALSO
 	devicetree.resource/DT_GetChild()
 
-devicetree.resource/DT_GetProperty           devicetree.resource/DT_GetProperty
+devicetree.resource/DT_GetProperty         devicetree.resource/DT_GetProperty
 
    NAME
 	DT_GetProperty -- get the first property of a node, or the next one
@@ -289,7 +285,7 @@ devicetree.resource/DT_GetProperty           devicetree.resource/DT_GetProperty
 	devicetree.resource/DT_FindProperty(),
 	devicetree.resource/DT_GetPropName()
 
-devicetree.resource/DT_GetPropLen             devicetree.resource/DT_GetPropLen
+devicetree.resource/DT_GetPropLen           devicetree.resource/DT_GetPropLen
 
    NAME
 	DT_GetPropLen -- get the size of a property value
@@ -313,7 +309,7 @@ devicetree.resource/DT_GetPropLen             devicetree.resource/DT_GetPropLen
    SEE ALSO
 	devicetree.resource/DT_GetPropValue()
 
-devicetree.resource/DT_GetPropName           devicetree.resource/DT_GetPropName
+devicetree.resource/DT_GetPropName         devicetree.resource/DT_GetPropName
 
    NAME
 	DT_GetPropName -- get the name of a property
@@ -336,7 +332,7 @@ devicetree.resource/DT_GetPropName           devicetree.resource/DT_GetPropName
    SEE ALSO
 	devicetree.resource/DT_GetProperty()
 
-devicetree.resource/DT_GetPropValue         devicetree.resource/DT_GetPropValue
+devicetree.resource/DT_GetPropValue       devicetree.resource/DT_GetPropValue
 
    NAME
 	DT_GetPropValue -- get the value of a property
@@ -365,7 +361,7 @@ devicetree.resource/DT_GetPropValue         devicetree.resource/DT_GetPropValue
    SEE ALSO
 	devicetree.resource/DT_GetPropLen()
 
-devicetree.resource/DT_OpenKey                   devicetree.resource/DT_OpenKey
+devicetree.resource/DT_OpenKey                 devicetree.resource/DT_OpenKey
 
    NAME
 	DT_OpenKey -- open a node by its path
@@ -421,3 +417,4 @@ devicetree.resource/DT_OpenKey                   devicetree.resource/DT_OpenKey
    SEE ALSO
 	devicetree.resource/DT_CloseKey()
 
+
